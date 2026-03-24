@@ -4,3 +4,12 @@ let menu = document.querySelector(".navbar ul");
 line.addEventListener("click", () => {
   menu.classList.toggle("showmenu");
 });
+
+window.addEventListener("scroll", () => {
+  let nav = document.querySelector(".navbar");
+  if (scrollY > 50) {
+    nav.classList.add("navbarSticky");
+  } else {
+    nav.classList.remove("navbarSticky");
+  }
+});
