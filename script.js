@@ -13,3 +13,30 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("navbarSticky");
   }
 });
+
+// SERVICE SLIDER
+
+var swiper = new Swiper(".ServiceSwiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
+});
