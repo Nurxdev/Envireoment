@@ -391,6 +391,50 @@ button:hover {
   left: 88% !important;
   content: "80%";
 }
+
+/* COUNTER SECTION */
+.counter {
+  background-image: url(images/counter-bg.png);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+}
+.count_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.count_box img {
+  margin: 20px 0;
+  transition: 0.3s;
+}
+.count_box h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+  line-height: 2rem;
+}
+.count_box h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.8rem;
+  transition: 0.3s;
+}
+
+.count_box:hover img {
+  filter: invert(100%);
+  cursor: pointer;
+}
+.count_box:hover h1,
+.count_box:hover h2 {
+  color: #000;
+}
 @keyframes pluse {
   0% {
     box-shadow: 0 0 0 0px rgb(0, 128, 0, 0);
@@ -466,6 +510,9 @@ button:hover {
   .skills_img {
     width: 100%;
   }
+  .counter {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 900px) {
   .Social {
@@ -477,6 +524,9 @@ button:hover {
   .header-content h1 {
     font-size: 3rem;
     line-height: 3.5rem;
+  }
+  .counter {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -508,5 +558,11 @@ button:hover {
   .Headings h1 {
     font-size: 2rem;
     line-height: 2.5rem;
+  }
+    .counter{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    grid-template-columns: repeat(1,1fr);
   }
 }
